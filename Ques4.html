@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Registration Page</title>
+</head>
+    <title>Registration Page</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form onsubmit="return validate_form()" name="Registration" action="1.html">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required pattern="^[a-zA-Z]{6,}$" title="First Name should contain alphabets and the length should not be less than 6 characters.">
+            <div class="error-message" id="error-first-name"></div>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required title="Last Name should not be empty.">
+            <div class="error-message" id="error-last-name"></div>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required title="Address should not be empty.">
+            <div class="error-message" id="error-address"></div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6">
+            <div class="error-message" id="error-password"></div>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required pattern="[^\s@]+@[^\s@]+\.[^\s@]+" title="Invalid E-mail id. Please enter a valid email address (name@domain.com).">
+            <div class="error-message" id="error-email"></div>
+
+            <label for="mobile-number">Mobile Number:</label>
+            <input type="text" id="mobile-number" name="mobile-number" required pattern="\d{11}" title="Mobile Number should contain 11 digits only.">
+            <div class="error-message" id="error-mobile-number"></div>
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+ 
+</body>
+</html>
+
